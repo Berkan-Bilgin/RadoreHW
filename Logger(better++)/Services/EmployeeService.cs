@@ -14,11 +14,13 @@ namespace Logger_better___.Services
     {
         private readonly ILogger _salaryLogger;
         private readonly ILogger _leaveLogger;
+        private readonly ILogger _baseLogger;
 
-        public EmployeeService(ILogger salaryLogger, ILogger leaveLogger)
+        public EmployeeService(ILogger baseLogger, ILogger salaryLogger = null, ILogger leaveLogger = null)
         {
-            _salaryLogger = salaryLogger;
-            _leaveLogger = leaveLogger;
+            _baseLogger = baseLogger;
+            _salaryLogger = salaryLogger ?? _baseLogger;  // SalaryLogger tanımlanmazsa baseLogger kullanılır
+            _leaveLogger = leaveLogger ?? _baseLogger;    // LeaveLogger tanımlanmazsa baseLogger kullanılır
         }
 
         public void PaySalary(Employee emp)
@@ -32,6 +34,14 @@ namespace Logger_better___.Services
             _leaveLogger.Log($"İzin alındı: {emp.Name}");
             // İzin alma işlemleri
         }
+
+        public void TerminateEmployee(Employee emp)
+        {
+            _baseLogger.Log($"Çalışan işten çıkarıldı: {emp.Name}");
+            // İşten çıkarma işlemleri burada yapılır
+        }
+
+
     }
 
 }

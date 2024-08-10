@@ -12,6 +12,14 @@ namespace Logger_better___.Services
 {
     public class LoggerService
     {
+        public ILogger CreateBaseLogger()
+        {
+            var compositeLogger = new CompositeLogger();
+            compositeLogger.AddLogger(new SQLServerLogger());
+            return compositeLogger;
+        }
+
+
         public ILogger CreateSalaryLogger()
         {
             var compositeLogger = new CompositeLogger();
