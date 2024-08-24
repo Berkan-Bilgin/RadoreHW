@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalaryCalculator", "SalaryC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger(bad)", "Logger(bad)\Logger(bad).csproj", "{9D3E740D-C63D-4AB6-B6B0-CE48DA755B1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger(v1)", "Logger(better)\Logger(v1).csproj", "{51DEDB70-DF12-4A4D-A8D6-02D63C3776EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger(v1)", "Logger(better)\Logger(v1).csproj", "{51DEDB70-DF12-4A4D-A8D6-02D63C3776EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger(v2)", "Logger(better+)\Logger(v2).csproj", "{215E74C0-6667-43DA-9455-42E7F9C6A7B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger(v2)", "Logger(better+)\Logger(v2).csproj", "{215E74C0-6667-43DA-9455-42E7F9C6A7B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger(v3)", "Logger(better++)\Logger(v3).csproj", "{736BEA77-7533-456B-B303-28EF56892808}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger(v3)", "Logger(better++)\Logger(v3).csproj", "{736BEA77-7533-456B-B303-28EF56892808}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logger(v4)", "Logger(v4)\Logger(v4).csproj", "{F353CCD4-A8FE-45FA-AF38-F306B309E0C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogForm", "LogForm\LogForm.csproj", "{A48E59FD-A1AD-4498-A766-DA18721FB211}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{736BEA77-7533-456B-B303-28EF56892808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736BEA77-7533-456B-B303-28EF56892808}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736BEA77-7533-456B-B303-28EF56892808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F353CCD4-A8FE-45FA-AF38-F306B309E0C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F353CCD4-A8FE-45FA-AF38-F306B309E0C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F353CCD4-A8FE-45FA-AF38-F306B309E0C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F353CCD4-A8FE-45FA-AF38-F306B309E0C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48E59FD-A1AD-4498-A766-DA18721FB211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48E59FD-A1AD-4498-A766-DA18721FB211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48E59FD-A1AD-4498-A766-DA18721FB211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48E59FD-A1AD-4498-A766-DA18721FB211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
